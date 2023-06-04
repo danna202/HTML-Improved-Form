@@ -1,1 +1,1 @@
-# lab-2.5.2-improved-sign-up-form
+# HTML assignment #2 Activity-ImprovedForm (html-2-validations-and-constraints)
