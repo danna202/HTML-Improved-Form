@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <h1>🍹🏄‍♀️ Contest Results 🏄‍♀️🍹</h1>
+        <h1>🍹🏄‍♀️ Did you win? 🏄‍♀️🍹</h1>
         <div>
             <h2 id="status-message"></h2>
             <h3 id="sub-message"></h3>
@@ -38,7 +38,7 @@
         
         // Fill the page with the user's personal information
         document.getElementById('disclaimer').textContent = `Thank you, ${name}, for entering our once in a lifetime vacation contest!`
-        emailMessage.append(`${winner ? 'As our chosen winner' : 'Whenever we\'d like to send marketing materials to you'}, we will contact you via email at ${email}, and send written correspondence to the following mailbox:`)
+        emailMessage.append(`${winner ? 'As our chosen winner' : 'Whenever we send marketing materials to you'}, we will contact you via email, and send written correspondence to the following mailbox:`)
         document.getElementById('disclaimer').append(emailMessage)
         document.getElementById('address1').textContent = address
         document.getElementById('address2').textContent = cityStateZip
@@ -64,7 +64,7 @@
         else {
             document.getElementById('status-message').textContent = `Sorry, ${name}, You Didn't Win This Time!`
             document.getElementById('sub-message').textContent = `Maybe you'll get to ${choice} next time!`
-            document.getElementById('small-print').textContent = 'Better luck next time!'
+            document.getElementById('small-print').textContent = 'Try again in our next contest coming soon!'
         }
     </script>
 </body>
